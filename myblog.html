@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      _                     _               _
+     | |                   | |             | |
+     | | ___ __   ___ _ __ | |_   __ _ _ __| |_
+     | |/ / '_ \ / __| '_ \| __| / _` | '__| __|
+     |   <| | | | (__| |_) | |_ | (_| | |  | |_
+     |_|\_\_| |_|\___| .__/ \__(_)__,_|_|   \__|
+                     | |
+                     |_|
+
+    Thanks for checking out my code :)
+
+    My resources: http://getbootstrap.com/docs/4.1/getting-started/introduction/       -- Bootstrap
+                  https://github.com/graingert/wow                                     -- Animations effects Docs
+                  https://github.com/wagerfield/parallax                               -- Paralax effects Docs
+                  https://codepen.io/aaroniker/full/gdyjRg                             -- Hamburger menu codepen
+                  https://typeitjs.com/docs/                                           -- TypeIt Docs
+                  https://xd.adobe.com/view/a9a83dbe-eb42-423a-7826-0e1ed0e4490a-df99/ -- How it should look like - Prototype
+
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="assets/core/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/core/favicon.ico" type="image/x-icon">
+
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Blog | Lukas Holona Digital Portfolio</title>
+
+    <meta name="fb_admins_meta_tag" content="kncptart" />
+    <meta name="google-site-verification" content="66YcFs83UAFDyNGn-POBCIGX0zY5jpszZJ42hHvAqRg" />
+    <meta name="keywords" content="portfolio, digital cv, user experience, art, graphic design, animation, user interface" />
+    <meta name="description" content="Hi! I am Lukas Holona. I am an UX designer | Swift &amp; Front-end enthusiast | d.Thinker from Prague working on digital solutions to be user friendly with usability emphasis." />
+    <meta name="robots" content="index" />
+    <meta property="og:title" content="Designer | Lukas Holona Digital Portfolio" />
+    <meta property="og:description" content="Hi! I am Lukas Holona. I am an UX designer | Swift &amp; Front-end enthusiast | d.Thinker from Prague working on digital solutions to be user friendly with usability emphasis." />
+    <meta property="og:url" content="https://www.kncpt.art" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Designer | Lukas Holona Digital Portfolio" />
+    <meta property="og:image" content="assets/social/thumbnail_fb.png" />
+    <meta property="fb:admins" content="kncptart" />
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body onload="genQuote()">
+      <!-- OVERLAY MENU -->
+      <div class="overlay-menu"></div>
+      <div class="overlay-menu-inner">
+          <div class="container-fluid">
+              <div class="row v-pd-10">
+                  <div class="col-2"></div>
+                  <div class="col-8" style="margin-left: -13px;">
+                    <ul>
+                      <li class="wow-menu fadeIn c-white" data-wow-delay="0.6s"><a href="myblog.html">Blog</a></li>
+                      <li class="wow-menu fadeIn c-white"  data-wow-delay="0.8s"><span class="dot-open-w"></span><a href="#" id="inner-p">Portfolio</a></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8" id="inner" style="margin-left: -13px;">
+                      <span class="dropdown-line-w"></span>
+                      <ul>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">Wireframes</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">Case Study</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">User Interface</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8" style="margin-left: -13px;">
+                      <ul class="last">
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.2s"><a href="about.html">About Me</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.4s"><a href="#">Contact</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.6s"><a href="#">My CV</a></li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+              <div class="container-fluid fix-bottom">
+                  <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-5">
+                          <h4 class="wow-menu fadeIn c-white" data-wow-delay="1.8s">About me</h4>
+                      </div>
+                      <div class="col-4">
+                          <h4 class="wow-menu fadeIn c-white" data-wow-delay="1.8s">Quote of the day</h4>
+                      </div>
+                      <div class="col-1"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-2"></div>
+
+                      <div class="col-3">
+                          <div class="circle-img wow-menu fadeIn" data-wow-delay="2s"></div>
+                          <div class="about-circle">
+                          <p class="wow-menu fadeIn c-white" data-wow-delay="2s">I am an UX designer | Swift & Front-end enthusiast from Prague working on digital user friendly products with usability emphasis.<br> Contact me on <a href="#">holonalukas@protonmail.com</a></p>
+                          <p class="wow-menu fadeIn c-white" data-wow-delay="2s">Learn <a href="about.html">more</a></p>
+                          </div>
+                      </div>
+                      <div class="col-2"></div>
+                      <div class="col-3">
+                          <p class="wow-menu fadeIn c-white" id="quote" data-wow-delay="2s"></p>
+                      </div>
+                      <div class="col-2"></div>
+                  </div>
+              </div>
+              <div class="divider wow-menu fadeIn" data-wow-delay="2.2s">
+                  <p class="footer-left c-white wow-menu fadeIn" data-wow-delay="2.2s">© 2019 | Kncpt.art made by Lukas Holona | All Rights Reserved | <a id="menu-link" href="changelog.html">Changelog</a></p>
+                  <p class="footer-right c-white wow-menu fadeIn" data-wow-delay="2.2s">Built with bootstrap and a lot of patience. Like what you see? I can design one for you, just <a id="menu-link" href="contact.html">contact me.</a></p>
+              </div>
+
+            </div>
+
+          <div class="v-line"></div>
+            <!-- NAVIGATION -->
+            <nav>
+                <div class="logo-position float-left">
+                    <a class="logo c-primary" href="index.html">KNCPT</a>
+                </div>
+                <div class="hamburger float-right">
+                    <div class="menu-wrapper">
+                        <div class="hamburger-menu"></div>
+                    </div>
+                </div>
+                <div class="menu float-right">
+                    <ul>
+                        <li><a href="index.html" class="home">Explore</a></li>
+                        <li><a href="myblog.html" class="blog active">Blog</a></li>
+                        <li><a class="portfolio" href="#"><span style="margin-left: 10px" class="dot-close" id="dots"></span>Portfolio</a></li>
+                        <div class="menuUnderline"></div>
+                    </ul>
+                    <div class="portfolio-content">
+                      <div class="dropdown-line"></div>
+                      <div class="item-wrap">
+                        <div class="item"><a href='#'>Wireframes</a></div>
+                        <div class="item"><a href='#'>Case Study</a></div>
+                        <div class="item"><a href='#'>User Interface</a></div>
+                      </div>
+                    </div>
+                </div>
+            </nav>
+
+        <div class="title rotate"><p class="wow fadeInLeft" data-wow-delay="1s">01 | Introduction</p></div>
+
+        <div class="container">
+            <div style="height:200px;"></div>
+            <div class="row pt-5">
+                <div class="col-2"></div>
+                <div class="col-8">
+
+                    <h2>In October, we shared an update from our VP of Editorial</h2>
+                    <h3>To gain insight into how and for whom you’d like to use your UX design skills, ask yourself:</h3>
+                    <h4>Show and Tell — Practical Design Tips for UX Portfolios</h4>
+
+                    <p>Happy New Year! To kick off the year, we’ve got a new Q&A with two of our editors, details on December payments, and some writing prompts to help inspire your 2019 writing goals.
+Meet Medium’s “Elevators”<br></p>
+
+                    <p>In October, we shared an update from our VP of Editorial, <a href="https://www.kncpt.art">Siobhan O'Connor</a>, which outlined the many new ways we’ve been working with writers to reach a broader audience and earn more more money.<br></p>
+
+                    <p>Many of you asked for more details and background on our editors who scour the platform, look for great stories to share with our readers, and work with writers to edit and feature their stories. So this week, we published an interview with two of our “Elevators” — Stephanie Georgopulos and Harris Sockel — who spend their days searching for great writing on Medium and working with many of you on yours.<br></p>
+
+                    <p>In the interview, you’ll learn more about why they starting working at Medium, what they are looking for in stories to “elevate,” writing tips, and their process for working with writers. Enjoy!</p>
+                    <a href="assets/grid/four.jpg" target="_blank">
+                        <img src="assets/grid/four.jpg" class="img-fluid v-pd-5" alt="Responsive image">
+                    </a>
+                    <p class="alt c-grey v-pd-1">Happy New Year! To kick off the year, we’ve got a new</p>
+
+                    <p>Many of you asked for more details and background on our editors who scour the platform, look for great stories to share with our readers, and work with writers to edit and feature their stories. So this week, we published an interview with two of our “Elevators” — Stephanie Georgopulos and Harris Sockel — who spend their days searching for great writing on Medium and working with many of you on yours.<br></p>
+
+                    <p>In the interview, you’ll learn more about why they starting working at Medium, what they are looking for in stories to “elevate,” writing tips, and their process for working with writers. Enjoy!</p>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+            <div class="row v-pd-20"></div>
+        </div>
+        <!-- FOOTER CONTENT -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" style="padding-top: 40px;">
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <h6 id="logo-footer">KNCPT</h6>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                </div>
+
+
+                <div class="row" style="padding-top: 20px;">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+
+                        <div class="c-white bold">About me</div>
+                        <div style="padding-top: 20px;">
+                            <div class="footer-circle-img float-left"></div>
+                            <p class="c-white" >I am an UX designer | Swift & Front-end enthusiast from Prague working on digital user friendly products with usability emphasis.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-1"></div>
+
+                    <div class="col-lg-2 d-none d-xl-block">
+                        <div class="row">
+                            <div class="c-white bold">What you can find here?</div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;" id="footer-li">
+                            <ul>
+                                <li><a href="index.html">Explore</a></li>
+                                <li><a href="myblog.html">Blog</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                                <li><a href="https://www.kncpt.art/assets/cv/CV_Lukas_Holona_19.pdf">My CV</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-1"></div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-10">
+                        <div class="row">
+                            <div class="c-white bold">Quote of the day</div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;">
+                            <p class="c-white" id="quote2">"You are never too old to set another goal or to dream a new dream."<br><br>- C.S Lewis"</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+                </div>
+
+                <div class="row" style="padding-top: 30px;">
+                    <div class="footer-divider">
+                        <p class="footer-left c-white">© 2019 | Kncpt.art made by Lukas Holona | All Rights Reserved | <a id="menu-link" href="changelog.html">Changelog</a></p>
+                        <p class="footer-right c-white">Built with bootstrap and a lot of patience. Like what you see? I can design one for you, just <a id="menu-link" href="mailto:holonalukas@protonmail.com">contact me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/typeit.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116298485-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116298485-1');
+    </script>
+
+</html>

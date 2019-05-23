@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      _                     _               _
+     | |                   | |             | |
+     | | ___ __   ___ _ __ | |_   __ _ _ __| |_
+     | |/ / '_ \ / __| '_ \| __| / _` | '__| __|
+     |   <| | | | (__| |_) | |_ | (_| | |  | |_
+     |_|\_\_| |_|\___| .__/ \__(_)__,_|_|   \__|
+                     | |
+                     |_|
+
+    Thanks for checking out my code :)
+
+    My resources: http://getbootstrap.com/docs/4.1/getting-started/introduction/       -- Bootstrap
+                  https://github.com/graingert/wow                                     -- Animations effects Docs
+                  https://github.com/wagerfield/parallax                               -- Paralax effects Docs
+                  https://codepen.io/aaroniker/full/gdyjRg                             -- Hamburger menu codepen
+                  https://typeitjs.com/docs/                                           -- TypeIt Docs
+                  https://xd.adobe.com/view/a9a83dbe-eb42-423a-7826-0e1ed0e4490a-df99/ -- How it should look like - Prototype
+
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="assets/core/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/core/favicon.ico" type="image/x-icon">
+
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>About me | Lukas Holona Digital Portfolio</title>
+
+    <meta name="fb_admins_meta_tag" content="kncptart" />
+    <meta name="google-site-verification" content="66YcFs83UAFDyNGn-POBCIGX0zY5jpszZJ42hHvAqRg" />
+    <meta name="keywords" content="portfolio, digital cv, user experience, art, graphic design, animation, user interface" />
+    <meta name="description" content="Hi! I am Lukas Holona. I am an UX designer | Swift &amp; Front-end enthusiast | d.Thinker from Prague working on digital solutions to be user friendly with usability emphasis." />
+    <meta name="robots" content="index" />
+    <meta property="og:title" content="About me | Lukas Holona Digital Portfolio" />
+    <meta property="og:description" content="Hi! I am Lukas Holona. I am an UX designer | Swift &amp; Front-end enthusiast | d.Thinker from Prague working on digital solutions to be user friendly with usability emphasis." />
+    <meta property="og:url" content="https://www.kncpt.art" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Designer | Lukas Holona Digital Portfolio" />
+    <meta property="og:image" content="assets/social/thumbnail_fb.png" />
+    <meta property="fb:admins" content="kncptart" />
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body onload="genQuote()">
+      <!-- OVERLAY MENU -->
+      <div class="overlay-menu"></div>
+      <div class="overlay-menu-inner">
+          <div class="container-fluid">
+              <div class="row v-pd-10">
+                  <div class="col-2"></div>
+                  <div class="col-8" style="margin-left: -13px;">
+                    <ul>
+                      <li class="wow-menu fadeIn c-white" data-wow-delay="0.6s"><a href="myblog.html">Blog</a></li>
+                      <li class="wow-menu fadeIn c-white"  data-wow-delay="0.8s"><span class="dot-open-w"></span><a href="#" id="inner-p">Portfolio</a></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8" id="inner" style="margin-left: -13px;">
+                      <span class="dropdown-line-w"></span>
+                      <ul>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">Wireframes</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">Case Study</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1s"><a href="#">User Interface</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-8" style="margin-left: -13px;">
+                      <ul class="last">
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.2s"><a href="about.html">About Me</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.4s"><a href="#">Contact</a></li>
+                          <li class="wow-menu fadeIn c-white" data-wow-delay="1.6s"><a href="#">My CV</a></li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+              <div class="container-fluid fix-bottom">
+                  <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-5">
+                          <h4 class="wow-menu fadeIn c-white" data-wow-delay="1.8s">About me</h4>
+                      </div>
+                      <div class="col-4">
+                          <h4 class="wow-menu fadeIn c-white" data-wow-delay="1.8s">Quote of the day</h4>
+                      </div>
+                      <div class="col-1"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-2"></div>
+
+                      <div class="col-3">
+                          <div class="circle-img wow-menu fadeIn" data-wow-delay="2s"></div>
+                          <div class="about-circle">
+                          <p class="wow-menu fadeIn c-white" data-wow-delay="2s">I am an UX designer | Swift & Front-end enthusiast from Prague working on digital user friendly products with usability emphasis.<br> Contact me on <a href="#">holonalukas@protonmail.com</a></p>
+                          <p class="wow-menu fadeIn c-white" data-wow-delay="2s">Learn <a href="about.html">more</a></p>
+                          </div>
+                      </div>
+                      <div class="col-2"></div>
+                      <div class="col-3">
+                          <p class="wow-menu fadeIn c-white" id="quote" data-wow-delay="2s"></p>
+                      </div>
+                      <div class="col-2"></div>
+                  </div>
+              </div>
+              <div class="divider wow-menu fadeIn" data-wow-delay="2.2s">
+                  <p class="footer-left c-white wow-menu fadeIn" data-wow-delay="2.2s">© 2019 | Kncpt.art made by Lukas Holona | All Rights Reserved | <a id="menu-link" href="changelog.html">Changelog</a></p>
+                  <p class="footer-right c-white wow-menu fadeIn" data-wow-delay="2.2s">Built with bootstrap and a lot of patience. Like what you see? I can design one for you, just <a id="menu-link" href="contact.html">contact me.</a></p>
+              </div>
+
+            </div>
+
+          <div class="v-line"></div>
+        <!-- NAVIGATION -->
+        <nav>
+            <div class="logo-position float-left">
+                <a class="logo c-primary" href="index.html">KNCPT</a>
+            </div>
+            <div class="hamburger float-right">
+                <div class="menu-wrapper">
+                    <div class="hamburger-menu"></div>
+                </div>
+            </div>
+            <div class="menu float-right">
+                <ul>
+                    <li><a href="about.html" class="about active">About me</a></li>
+                    <li><a href="index.html" class="home">Explore</a></li>
+                    <li><a href="myblog.html" class="blog">Blog</a></li>
+                    <li><a class="portfolio" href="#"><span style="margin-left: 10px" class="dot-close" id="dots"></span>Portfolio</a></li>
+                    <div class="menuUnderline"></div>
+                </ul>
+                <div class="portfolio-content">
+                  <div class="dropdown-line"></div>
+                  <div class="item-wrap">
+                    <div class="item"><a href='#'>Wireframes</a></div>
+                    <div class="item"><a href='#'>Case Study</a></div>
+                    <div class="item"><a href='#'>User Interface</a></div>
+                  </div>
+                </div>
+            </div>
+        </nav>
+        <div class="title rotate"><p class="wow fadeInLeft" data-wow-delay="1s">My Biography</p></div>
+
+        <div class="container">
+            <div style="height:200px;"></div>
+            <div class="row pt-5">
+                <div class="col-2"></div>
+                <div class="col-8">
+
+                    <h2>My short biography</h2>
+                    <h3>Just the important stuff so you won't be bored.</h3>
+
+                    <p>My career starts after unfortunate exam on architecture, I've decided fly to UK for some experiences. I quickly found a job in a warehouse and started living on my own. During two years of my stay, I had enough time to find out, what interests me.</p>
+
+                    <p>After my return to Czech Republic I co-founded digital agency 24Production, where I learned basics of digital industry. After that I got the opportunity to work as a Graphic Designer (later on Visual and UX designer)  in TravelPortal.cz, the travel agency. In parallel I work on IDF Certificates, as it helps me deepen my knowledge of virtual enviroment which the www is.</p>
+
+                    <h4>Design</h4>
+
+                    <p>Currently I‘m responsible for design system of the company. From letterheads to banner campaigns. I have experience with print campaigns (subway trains), offline (television) as well as with online campaigns (seznam, crymtan, google, adssets). I’m also responsible for dynamic banners using XML feeds to present TravelPortal.cz hotels and destinations, which are unique and innovative in travel industry.</p>
+
+                    <p>From routine Photoshop and Illustrator work, I use XD and Sketch to design new fuctionality for our web platform TravelPortal.cz. I have been designing mobile version for TravelPortal.cz as well as Affiliate website (which is not live).</p>
+
+                    <p>When it comes to wireframes, interface, interactions and user experience it’s my time to shine. I make sure our user is in charge of their action all the time, because happy customer is more willing to return and make a conversion. I usually research a lot to convince stakeholders there is better solution for particular problem, which can improve overall hapiness and conversions.</p>
+
+                    <p>Prototyping is integral part of my day-to-day. Personally I have good experience with Protopie, importing design from XD and make it live in Protopie is crucial step to imagine micro-interaction with the product. For more comprehensive projects I use Axure and/or Sketch. Both of them are viable for me.</p>
+
+                    <h4>Marketing</h4>
+
+                    <p>I also have good understanding of the current businness model as well. I’m responsible for visual design of TravelPortal.cz newsletters as well as I was in charge of sending weekly emails for two companies. We are using Mailchimp (earlier APSIS) platform and it’s automatizations, planning and A/B testing. I also made all kinds of interactive social media posts. (360 images, videos with animations and much more).</p>
+
+                    <h4>Research</h4>
+
+                    <p>I’m able to read data from Google analytics and Hotjar and implement my findings into working design. We made great progress with Hotjar platform as it convinced our stakeholders to explore different options and increase sales potential.</p>
+
+                    <p>I have partial experience with conducting design sprint and full experience with detection user experience pain points and writing valuable brief for conducting user testing.</p>
+
+                    <h4>Dev</h4>
+
+                    <p>Last but not least, I have understanding for development hand-off, because of my knowledge how html, css, js and swift works. I wrote my portfolio myself and I’m intensively learning how to build apps in swift language. (I also already wrote some simple ones).
+                    As you can see I’m very versatile when it comes to my skills. Each section I have mentioned is important to me because it can offer different perspective on a problem and might bring better solution.</p>
+
+                    <h4>Final words</h4>
+
+                    <p>I can offer you great value in design and user experience as well as some valuable insights from different fields of interests.</p>
+
+                    <p>My dream is get the opportunity to work in northern countries such as Denmark, Sweden or Belgium as user experience designer.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+            <div class="row v-pd-20"></div>
+        </div>
+        <!-- FOOTER CONTENT -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" style="padding-top: 40px;">
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <h6 id="logo-footer">KNCPT</h6>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                </div>
+
+
+                <div class="row" style="padding-top: 20px;">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-10">
+
+                        <div class="c-white bold">About me</div>
+                        <div style="padding-top: 20px;">
+                            <div class="footer-circle-img float-left"></div>
+                            <p class="c-white" >I am an UX designer | Swift & Front-end enthusiast from Prague working on digital user friendly products with usability emphasis.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-1"></div>
+
+                    <div class="col-lg-2 d-none d-xl-block">
+                        <div class="row">
+                            <div class="c-white bold">What you can find here?</div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;" id="footer-li">
+                            <ul>
+                                <li><a href="index.html">Explore</a></li>
+                                <li><a href="myblog.html">Blog</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                                <li><a href="https://www.kncpt.art/assets/cv/CV_Lukas_Holona_19.pdf">My CV</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-1"></div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-10">
+                        <div class="row">
+                            <div class="c-white bold">Quote of the day</div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;">
+                            <p class="c-white" id="quote2">"You are never too old to set another goal or to dream a new dream."<br><br>- C.S Lewis"</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+
+                </div>
+
+                <div class="row" style="padding-top: 30px;">
+                    <div class="footer-divider">
+                        <p class="footer-left c-white">© 2019 | Kncpt.art made by Lukas Holona | All Rights Reserved | <a id="menu-link" href="changelog.html">Changelog</a></p>
+                        <p class="footer-right c-white">Built with bootstrap and a lot of patience. Like what you see? I can design one for you, just <a id="menu-link" href="mailto:holonalukas@protonmail.com">contact me.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/packery.pkgd.min.js"></script>
+    <script src="js/typeit.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116298485-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116298485-1');
+    </script>
+
+</html>
