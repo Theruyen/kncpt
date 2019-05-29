@@ -1,7 +1,7 @@
 {
   "name": "kncpt",
   "version": "1.0.0",
-  "description": "a website portfolio",
+  "description": "A website portfolio",
   "main": "like_button.js",
   "scripts": {
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Theruyen/kncpt.git"
   },
-  "author": "",
+  "author": "Lukas Holona",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Theruyen/kncpt/issues"
@@ -22,5 +22,9 @@
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "http-server": "^0.11.1"
-  }
+  },
+  "dependencies": {
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "keywords": []
 }
