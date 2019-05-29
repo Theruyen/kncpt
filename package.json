@@ -1,0 +1,26 @@
+{
+  "name": "kncpt",
+  "version": "1.0.0",
+  "description": "a website portfolio",
+  "main": "like_button.js",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theruyen/kncpt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Theruyen/kncpt/issues"
+  },
+  "homepage": "https://github.com/Theruyen/kncpt#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.11.1"
+  }
+}
