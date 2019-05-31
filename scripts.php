@@ -1,0 +1,33 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/typeit.min.js"></script>
+
+<script>
+    new TypeIt('#hero', {
+        strings: ["Lukas Holona.", "an UX designer.", "Swift &amp; Front-end enthusiast.", "an Architecture lover.", "from Prague.", "working on user friendly products."],
+        speed: 75,
+        deleteSpeed: 50,
+        loop: true,
+        html: true,
+        breakLines: false,
+        lifeLike: true,
+        nextStringDelay: 4000,
+        cursorChar: ['<span style="color:#4923F4;margin-left:-7px;">|</span>'],
+        startDelay: 900
+    });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116298485-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-116298485-1');
+</script>
